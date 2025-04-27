@@ -1,7 +1,7 @@
 /* #region Global */
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   /* font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -74,6 +74,16 @@ h3 {
   color: #22343d;
 }
 h4 {
+}
+button {
+  display: block;
+  border-radius: 4px;
+  background: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border: transparent;
+  padding: 15px 30px;
 }
 /* header */
 
@@ -151,6 +161,7 @@ h4 {
 /* #region section1 */
 .section1 {
   display: flex;
+  margin-bottom: 100px;
 }
 .section1-box {
   padding-top: 112px;
@@ -174,6 +185,9 @@ h4 {
   margin-bottom: 18px;
 }
 .section1-buttons {
+  display: flex;
+  align-items: baseline;
+
   width: 372px;
   height: 53px;
 }
@@ -186,6 +200,8 @@ h4 {
   height: 53px;
   background: #02897a;
   border: #02897a solid;
+
+  margin-right: 30px;
 }
 .section1-link {
   font-weight: 600;
@@ -194,6 +210,14 @@ h4 {
   text-decoration-skip-ink: none;
   color: #02897a;
   margin-bottom: 100px;
+  display: flex;
+}
+.icon-play {
+  align-items: baseline;
+  justify-content: center;
+  fill: #02897a;
+}
+.div-link {
 }
 /* #endregion section1*/
 
@@ -203,8 +227,15 @@ h4 {
   flex-direction: column;
 }
 .section2-h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 100px;
+
+  max-width: 539px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 50px;
 }
 .section2-ul {
   display: flex;
@@ -215,12 +246,12 @@ h4 {
   font-size: 22px;
   color: #22343d;
   padding-bottom: 13px;
-  padding-top: 130px;
 }
 .section2-p {
   margin-bottom: 76px;
 }
 .section2-button {
+  display: block;
   border-radius: 4px;
   width: 175px;
   height: 53px;
@@ -230,16 +261,271 @@ h4 {
   color: #fff;
   border-color: #02897a;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+.svg-product {
+  display: block;
+  border-radius: 19px;
+  width: 54px;
+  height: 54px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+  padding-right: 21px;
+}
+.svg-cursor {
+  background: #02897a;
+
+  fill: #fff;
+}
+.svg-snake {
+  background: #4d8dff;
+  fill: #fff;
+}
+.svg-heart {
+  background: #740a76;
+  fill: #fff;
+}
+.svg-sandclock {
+  background: #f03e3d;
+  fill: #fff;
+}
+
+.li-product {
+  display: ;
 }
 /* #endregion section2*/
 
+/* #region Managment sect3 */
 .section3-container {
   display: flex;
+  margin-bottom: 100px;
 }
 .section3-ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 91px;
+}
+
+.h3-div {
+  padding-bottom: 8px;
+}
+.h2-div {
+  padding-bottom: 25px;
+}
+.p-div {
+  padding-bottom: 30px;
+}
+/* #endregion Managment sect3*/
+
+/* #region Support sect4 */
+.section4-container {
+  display: flex;
+  margin-bottom: 100px;
+}
+.div-cust-support {
+  padding-top: 41px;
+}
+.h2-cust-support {
+  padding-bottom: 25px;
+}
+.p-cust-support {
+  padding-bottom: 30px;
+}
+.ul-cust-support {
+  display: flex;
   flex-direction: column;
-  width: 486px;
-  height: 418px;
+  gap: 25px;
+}
+.li-cust-support {
+  display: flex;
+  align-items: center;
+}
+.svg-cust-support {
+  border: 2.92px solid #fff;
+  border-radius: 14px;
+  width: 35px;
+  height: 35px;
+  background: #f03e3d;
+  padding: 8px;
+  fill: #fff;
+}
+.svg-orange {
+  background: #ff9900;
+}
+.svg-blue {
+  background: #4d8dff;
+}
+
+/* #endregion */
+
+/* #region sect5 */
+.collaborative-container {
+  display: flex;
+  margin-bottom: 150px;
+}
+.ul-div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.div-Collaborative {
+}
+
+/* #endregion */
+
+/* #region Process sect6 */
+.process-contsiner {
+  margin-bottom: 100px;
+}
+.div-process {
+  margin: 0 auto;
+  max-width: 542px;
+  align-items: center;
+
+  width: 100%;
+  text-align: center;
+}
+.h2-prcess {
+  padding-bottom: 25px;
+}
+
+.ul-process {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.li-process {
+  display: flex;
+  max-width: 408px;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 26px;
+}
+.p-process {
+  border: solid 1px transparent;
+  border-radius: 20px;
+  fill: #fff;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+  padding: 0 18px;
+}
+.li-ends {
+  justify-content: end;
+}
+
+.button-process {
+  margin: 0 auto;
+}
+
+/* #endregion */
+
+/* #region something sect7 */
+.something-container {
+  margin-bottom: 170px;
+}
+.p-something {
+  max-width: 465px;
+  padding-bottom: 40px;
+}
+.ul-something {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.li-something {
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  max-width: 350px;
+}
+.h2-something {
+  display: flex;
+  line-height: 167%;
+  font-size: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+}
+
+.p-li-something {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.span-something {
+  font-weight: 700;
+}
+.span-h2 {
+  color: #02897a;
+}
+
+/* #endregion */
+
+.h2-price {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.p-price {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ul-price {
+  display: flex;
+  gap: 72px;
+}
+.li-price {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  max-width: 322px;
+  width: 100%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  gap: 8px;
+  align-items: center;
+}
+.button-price {
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+.h2-price {
+  font-size: 24px;
+  padding-top: 32px;
+}
+.span-price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 76px;
+}
+.span-baks {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.div-price {
+  display: flex;
+  flex-direction: column;
+}
+.div-prices {
+  display: flex;
+  align-items: center;
+}
+.span-permonth {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 19px; */
+  line-height: 119%;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+}
+.li-standart {
+  background: #02897a;
+}
+.button-standart {
+  background: #fff;
+  color: #02897a;
 }
