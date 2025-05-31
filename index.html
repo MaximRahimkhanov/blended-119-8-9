@@ -9,9 +9,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
   <title>Bussiness promotion</title>
 </head>
@@ -20,23 +18,50 @@
 <body>
   <!-- #region header  -->
 
-  <header>
+  <header class="header">
     <div class="container header-container">
+
       <nav class="nav">
-        <a class="logo-text" href="./index.html"><img class="logo-image" src="./images/product/logo.png"
-            alt="logo" />Product</a>
+        <div class="header-div-logo">
+          <a class="logo" href="./index.html"><img class="logo-image" src="./images/product/logo.png" alt="logo" /><span
+              class="logo-text">Product</span></a>
+        </div>
 
         <ul class="nav-ul">
-          <li class="nav-li nav-li-pr"><a href="./index.html">Product</a></li>
-          <li class="nav-li"><a href="./pricing.html">Pricing</a></li>
-          <li class="nav-li"><a href="./customers.html">Customers</a></li>
-          <li class="nav-li"><a href="./resources.html">Resources</a></li>
+          <li class="nav-li nav-li-pr"><a class="header-link-text" href="./index.html">Product</a></li>
+          <li class="nav-li"><a class="header-link-text" href="./pricing.html">Pricing</a></li>
+          <li class="nav-li"><a class="header-link-text" href="./customers.html">Customers</a></li>
+          <li class="nav-li"><a class="header-link-text" href="./resources.html">Resources</a></li>
         </ul>
+
+        <svg class="icon-burger" width="28" height="31">
+          <use href="./images/iconsprite.svg#icon-menu"></use>
+        </svg>
       </nav>
+
       <ul class="nav-button">
-        <li><button class="button-nav-in" type="button">Sign In</button></li>
-        <li><button class="button-nav-up" type="button">Sign Up</button></li>
+        <li class="header-li-btn"><button class="button-nav-in" type="button">Sign In</button></li>
+        <li class="header-li-btn"><button class="button-nav-up" type="button">Sign Up</button></li>
       </ul>
+
+
+
+      <div class="mobile-menu">
+        <div>
+          <ul class="nav-ul">
+            <li class="nav-li nav-li-pr"><a href="./index.html">Product</a></li>
+            <li class="nav-li"><a href="./pricing.html">Pricing</a></li>
+            <li class="nav-li"><a href="./customers.html">Customers</a></li>
+            <li class="nav-li"><a href="./resources.html">Resources</a></li>
+          </ul>
+          </nav>
+          <ul class="nav-button">
+            <li><button class="button-nav-in" type="button">Sign In</button></li>
+            <li><button class="button-nav-up" type="button">Sign Up</button></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </header>
 
@@ -477,6 +502,7 @@
     <!-- #endregion Section10 -->
   </main>
   <!-- #endregion main-->
+
   <!-- #region footer -->
   <footer class="hidden">
     <div class="container div-footer">
