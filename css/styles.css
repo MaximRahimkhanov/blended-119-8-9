@@ -1,4 +1,5 @@
-/* #region global styles */
+
+/*? #region global styles */
 *,
 *::before,
 *::after {
@@ -76,7 +77,8 @@ button {
 }
 
 .container {
-  max-width: 369px;
+  width: 100%;
+  max-width: 1110px;
   padding-left: 18px;
   padding-right: 18px;
   margin: 0 auto;
@@ -84,14 +86,13 @@ button {
   box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
   background: #fafafa;
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 68px;
   }
 }
-/* Styles for Desktop devices */
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1110px;
@@ -99,6 +100,8 @@ button {
   }
 }
 /* #endregion global styles*/
+
+/*? #region Header */
 
 .mobile-menu {
   display: none;
@@ -131,12 +134,15 @@ button {
 
   line-height: 93%;
   color: #173a56;
+  
+ 
+
 }
 .icon-burger {
   fill: #30444e;
 }
 
-/* desk */
+/** desk */
 @media (min-width: 1400px) {
   .header-container {
     display: flex;
@@ -173,7 +179,7 @@ color: #548299;
   }
 
   
-  /* LOGO */
+  /** LOGO */
   .logo {
     padding: 14px 0;
     margin-right: 50px;
@@ -203,17 +209,13 @@ color: #548299;
     justify-content: start;
   }
 
-       
-
-
-
   /* button */
   .button-nav-in {
     width: 75px;
     height: 35px;
 
     border-radius: 5px;
-    transition: color 300ms ease-in-out, transform 300ms ease-in-out, box-shadow 300ms ease-in-out, background-color 300ms ease-in-out);
+    transition: color 300ms ease-in-out, transform 300ms ease-in-out, box-shadow 300ms ease-in-out, background-color 300ms ease-in-out;
   }
 
   .button-nav-in:hover {
@@ -245,7 +247,7 @@ color: #548299;
     padding: 16px 0;
   }
 
-  /* under line */
+  /** under line */
   .header-link-text {
     position: relative;
     
@@ -270,6 +272,45 @@ color: #548299;
     width: 100%;
     background-color: #09ccb5;
 }    
+ /* #endregion Header*/
+ .h2s1{
+  font-size: 30px;
+  margin-bottom: 20px;
+ }
  
+ .section1 {
+  display: flex;
+  flex-direction: row; /* десктоп: текст зліва, картинка справа */
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #173a56;
 }
+
+.section1-box,
+.section-one-img {
+  flex: 1;
+}
+
+
+  .section1 {
+    flex-direction: column; /* мобілка: вертикально */
+  }
+
+  .section-one-img {
+    order: -1; /* ставимо зверху */
+  }
+
+  .section1-box {
+    order: 1;
+    text-align: center;
+  }
+
+  .section1-buttons {
+    justify-content: center;
+  }
+  body {
+    background-color: red !important; /* Перевірка */
+  }
+
 
